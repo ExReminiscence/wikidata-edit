@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "wikidata-edit@1.7.1",
+      "E:\\scorum"
+    ]
+  ],
+  "_from": "wikidata-edit@1.7.1",
+  "_id": "wikidata-edit@1.7.1",
+  "_inBundle": false,
+  "_integrity": "sha1-/W+jA/1Q2UTHoIBh0QcxGGIb7GE=",
+  "_location": "/wikidata-edit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "wikidata-edit@1.7.1",
+    "name": "wikidata-edit",
+    "escapedName": "wikidata-edit",
+    "rawSpec": "1.7.1",
+    "saveSpec": null,
+    "fetchSpec": "1.7.1"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/wikidata-edit/-/wikidata-edit-1.7.1.tgz",
+  "_spec": "1.7.1",
+  "_where": "E:\\scorum",
+  "author": {
+    "name": "maxlath"
+  },
+  "bugs": {
+    "url": "https://github.com/maxlath/wikidata-edit/issues"
+  },
+  "dependencies": {
+    "bluereq": "^2.1.2",
+    "chalk": "^1.1.3",
+    "wikidata-sdk": "^5.1.4",
+    "wikidata-token": "^2.3.2"
+  },
+  "description": "Edit Wikidata from NodeJS",
+  "devDependencies": {
+    "config": "^1.25.1",
+    "doctoc": "^1.3.0",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1",
+    "standard": "^9.0.2",
+    "wikidata-cli": "^4.9.0"
+  },
+  "engines": {
+    "node": ">= 6.4"
+  },
+  "homepage": "https://github.com/maxlath/wikidata-edit#readme",
+  "keywords": [
+    "wikidata",
+    "edit",
+    "API"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "wikidata-edit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlath/wikidata-edit.git"
+  },
+  "scripts": {
+    "lint": "standard",
+    "prepublish": "npm run lint && npm run test",
+    "test": "mocha test/* test/*/*",
+    "update-properties": "./scripts/update_properties",
+    "update-toc": "doctoc README.md docs/*.md"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ],
+    "globals": [
+      "it",
+      "describe"
+    ]
+  },
+  "version": "1.7.1"
+}
