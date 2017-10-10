@@ -172,8 +172,7 @@ wdEdit.entity.edit({
   labels: { en: 'a new label in English', fr: 'un nouveau label en français' },
   descriptions: { en: 'a new description', fr: 'une nouvelle description' },
   claims: {
-    P1775: [ 'Q3576110', 'Q12206942' ],
-    P2002: 'bulgroz'
+    P1234: {value:1, ref:'http://google.com'},
   }
 })
 ```
@@ -185,8 +184,7 @@ wdEdit.entity.create({
   labels: { en: 'a label', fr: 'un label' },
   descriptions: { en: 'a new description', fr: 'une nouvelle description' },
   claims: {
-    P1775: [ 'Q3576110', 'Q12206942' ],
-    P2002: 'bulgroz'
+    P1234: {value:1, ref:'http://google.com'},
   }
 })
 ```
